@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Fetch Showcase - Animated Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">🚀</div>
+                <h1>API<span class="gradient-text">Fetch</span>Hub</h1>
+            </div>
+            <p class="subtitle">Real-time data fetching with smooth animations</p>
+        </header>
+
+        <div class="controls">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="posts">Posts</button>
+                <button class="tab-btn" data-tab="users">Users</button>
+                <button class="tab-btn" data-tab="todos">Todos</button>
+            </div>
+            <button class="refresh-btn" id="refreshBtn">
+                <span class="btn-icon">🔄</span>
+                Refresh Data
+            </button>
+        </div>
+
+        <div class="loading-screen" id="loadingScreen">
+            <div class="spinner"></div>
+            <p>Fetching amazing data...</p>
+        </div>
+
+        <main class="content" id="content">
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
